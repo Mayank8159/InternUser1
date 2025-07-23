@@ -63,3 +63,4 @@ export const listenToForegroundMessages = (callback) => {
 
 // Optional export
 export { messaging };
+

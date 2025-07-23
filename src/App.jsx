@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { requestFCMToken, listenToForegroundMessages } from './utils/firebaseUtils';
 
+
 function App() {
   const [fcmToken, setFcmToken] = useState('');
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,10 @@ function App() {
     });
   }, []);
 
+
+
   return (
+    
     <div style={{ padding: '2rem' }}>
       <h1>Firebase Push Notification Demo 🚀</h1>
       {loading ? (
